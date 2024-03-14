@@ -1,0 +1,29 @@
+.bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+
+}
+
+.label-text, h1 {
+  color: rgba(194, 255, 240, 1);
+  font-size: 32px;
+}
+
+
+input {
+  height: 75px;
+  width: 622px;
+  border-radius: 50px;
+  padding-left: 20px;
+}
+
+button:disabled {
+  background-image: none !important;
+  background-color: gray;
+  cursor: not-allowed;
+ }
+
+ input.ng-invalid.ng-touched {
+  border: red 4px solid;
+}

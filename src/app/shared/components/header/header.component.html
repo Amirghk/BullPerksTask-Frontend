@@ -1,0 +1,8 @@
+<div class="header-container position-fixed h1 w-100 bg-dark d-flex justify-content-between pt-4 mb-0">
+  <img src="../../../assets/images/header/blog-cache-deep-dive-1.png" class="mx-5" />
+  <div class="d-flex justify-content-around w-35">
+    <ng-container *ngFor="let item of headerItems">
+      <a *ngIf="!item.shouldBeAuthenticated || isAuthenticated" class="text-white inter" [routerLink]="[item.routerLink]" routerLinkActive="active-link">{{item.name}}</a>
+    </ng-container>
+  </div>
+</div>

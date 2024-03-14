@@ -1,0 +1,11 @@
+<div class="bg bg-dark text d-flex justify-content-center">
+  <img class="bubble" src="../../../assets/images/bullpreks-bbl.svg"/>
+  <div class="glass d-flex flex-column justify-content-center align-self-center ">
+    <div class="d-flex flex-column  align-self-center">
+      <button class="big-button" (click)="updateToken()">Update Token Data</button>
+      <div *ngIf="tokenUpdating" class="spinner-border text-primary align-self-center mt-4" role="status">
+      </div>
+      <h5 *ngIf="tokenUpdated" class="text-white align-self-center mt-4">Token Updated Successfully!</h5>
+    </div>
+  </div>
+</div>

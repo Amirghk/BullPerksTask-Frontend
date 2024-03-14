@@ -1,0 +1,17 @@
+<ng-container *ngIf="token;else updateToken">
+  <div class="bg bg-dark text d-flex justify-content-center">
+    <div class="d-flex flex-column justify-content-center">
+      <img src="../../../assets/images/tokens/blp.png" class="row h1 align-self-center token-pic"/>
+      <div class="row h1 align-self-center mb-5">{{token!.name}}</div>
+      <div class="row h5">Total Supply: {{token!.totalSupply | weiToToken}}</div>
+      <div class="row h5">Circulating Supply: {{token!.circulatingSupply | weiToToken}}</div>
+      <div class="row h5">Last Updated At: {{token!.updatedAt}}</div>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #updateToken>
+  <div class="bg bg-dark text d-flex justify-content-center">
+    <h1 class="d-flex align-self-center ">Update token first!</h1>
+  </div>
+</ng-template>

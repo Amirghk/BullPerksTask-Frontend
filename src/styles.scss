@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.inter {
+  font-family: 'Inter';
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.big-button {
+  height: 90px;
+  width: 390px;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, rgba(94, 254, 216, 1), rgba(212, 255, 245, 1)) !important;
+  font-size: 32px;
+  color: rgba(1, 3, 2, 1);
+}
